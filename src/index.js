@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
-const element = <div className="divone">
-  <h1>My name is Maari muthu</h1>
-  <h2>Initial of mine is B</h2>
-  <h3>My Degree is B.E</h3>
-</div>
+function AppBar() {
+  return  <div>
+    <h1>This is Appbar of the react js</h1>
+  </div>
+}
+function SideBar() {
+  return <div>
+    <h2>This is Side bar of the react js</h2>
+  </div>
+}
+function NavBar() {
+  return <div>
+    <h3>This is Nav bar of the react js</h3>
+  </div>
+}
+function Mywebsite() {
+  return  <div>
+    <AppBar />
+  <SideBar />
+  <NavBar />
+  </div>
+}
 ReactDOM.render(
-element,
+<Mywebsite />,
 document.getElementById('root'),
 );
 
