@@ -8,12 +8,12 @@
 
 ## react js concepts
 
-**render element in web page using jsx**
+### render element in web page using jsx
     jsx - javascript XML\
     using this jsx we can write a html code and assign this code to the variable , call that variable using ReactDOM.render and display it in browser,\
     Because of the lite-server we not need to reload the page.
 
-index.html code,\
+index.html code,
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -73,3 +73,35 @@ reactDOM.render(
     document.getElementById('root'),
 );
 ```
+
+*******************************************************************
+
+### Render CSS element into index.js
+
+Apply css concepts in reactjs is very simple\
+first You need to import the index.css file to index.js file \
+
+_Example code shown below_
+index.js
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css'
+const element = <div className="divone">
+  <h1>My name is Maari muthu</h1>
+  <h2>Initial of mine is B</h2>
+  <h3>My Degree is B.E</h3>
+</div>
+ReactDOM.render(
+element,
+document.getElementById('root'),
+);
+```
+index.css
+```css
+.divone{
+  color: blue;
+  text-align: center;
+}
+```
+
